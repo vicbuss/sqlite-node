@@ -1,7 +1,7 @@
 {
-  "name": "template_ts",
+  "name": "sqlite-test",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "tsc",
     "dev": "DEBUG_LEVEL_LOG=true ts-node-dev --respawn --transpile-only src/main/server.ts"
@@ -11,8 +11,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/sqlite3": "^3.1.11",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   }
 }
